@@ -1,0 +1,44 @@
+
+/* 
+=========================================================
+                 accordion
+=========================================================
+*/
+
+
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fefefe;
+}
+.item{
+    width: 100%;
+    /* color: #eee; */
+    text-align: left;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    height: 50px;
+    margin: 3px 0px;
+}
+.item::after{
+    content: "+";
+    float: right;
+    font-weight: bold;
+    color: #ccc;
+}
+.active::after{
+    content: "-";
+    float: right;
+}
+.content{
+    max-height: 0px;
+    overflow: hidden;
+    padding: 5px 10px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
